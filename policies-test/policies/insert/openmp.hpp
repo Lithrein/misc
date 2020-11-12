@@ -4,9 +4,10 @@
 template<typename T, typename U> class InsertOpenMP {};
 
 template<typename T>
-struct InsertOpenMP<T, _avl_array<T>> {
-
-  void insert(T elem, _avl_array<T>* atree) {
+struct InsertOpenMP<T, StorageArray<T>>
+{
+  void insert(T elem, StorageArray<T>* atree) {
+    std::cout << "openmp" << std::endl;
     GetTree(atree).push_back(elem);
   }
 };

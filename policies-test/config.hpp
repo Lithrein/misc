@@ -4,6 +4,6 @@
 /* Comment out the options you don't want in. */
 
 #define WITH_INSERT_NAIVE_POLICY
-#define WITH_INSERT_OPENMP_POLICY
+// #define WITH_INSERT_OPENMP_POLICY
 
 #endif

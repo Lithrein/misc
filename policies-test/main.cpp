@@ -6,7 +6,7 @@
 
 int
 main () {
-  avl_array<int, InsertOpenMP> tree;
+  bsc<int> tree;
   tree.insert(1);
   tree.insert(2);
   return 0;
